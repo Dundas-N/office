@@ -526,6 +526,26 @@ nav{
       font-size: 18px;
     }
   }
+//--------------contact PAGE-----------------
+  .contact{ 
+    display: flex;
+    align-items: center;
+    .content{
+      width: 100%;
+      position: static;
+      transform: none;
+    }
+    h1{
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p{
+      width: 80%;
+      font-size: 18px;
+    }
+  }
    //--------------OFFICE LIST PAGE-----------------
    .container-officelist{
     height: auto;
@@ -578,6 +598,16 @@ nav{
   }
   .row{
     grid-template-columns: 1fr;
+  }
+  //--------------contact PAGE-----------------
+  .contact{ 
+    display: flex;
+    align-items: center;
+    height: auto;
+    .content{
+      width: 100%;
+      margin-top: 60px;
+    }
   }
    //--------------DETAILS PAGE-----------------
    .details-container{
