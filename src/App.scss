@@ -1,0 +1,596 @@
+
+$blue: #5CC2EF;
+$white: #fff;
+$grey: #4A4A4A;
+$lgrey:#ececec;
+ 
+nav{
+  width: 100vw;
+  max-height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #4a4a4a42;
+}
+.navContainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0 10px;
+}
+.navLinks{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+
+  img .logo{
+    width: 55px;
+  }
+
+  li{
+    color: $white;
+    &:hover{
+      color: $blue; 
+      font-weight: 600;    
+      }
+  }
+  button{
+    background: $blue;
+    border: none;
+    border-radius: 2px;
+    width: 122px;
+    height: 37px;
+    color: $white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    &:hover{
+      background: $grey;
+      color: $white;
+      border: none;
+      }
+  }
+}
+
+//--------------Home PAGE-----------------
+.home{
+  width: 100%;
+  height: 100vh;
+  background: url('./bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .homeContainer{
+    max-width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;  
+  }
+}
+
+.contentLeft{
+  color: $white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  position: relative;;
+  top: 50%;
+  transform: translate(-0%,-45%);
+
+  .title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 9px;
+    line-height: 75px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    span{
+      font-weight: 200;
+      font-size: 3rem;
+    }
+  }
+  p{
+    width: auto;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+    line-height: 37px;
+  }
+  .btn{
+    background: $blue;
+    border-radius: 2px;
+    border: none;
+    color: $white;
+    width: 220px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem ;
+    font-weight: 300;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover{
+      background: $grey;
+      color: $white;
+      }
+  }
+}
+
+//--------------ABOUT PAGE-----------------
+.about{
+  width: 100%;
+  height: 100vh;
+
+  .content{
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  p{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 37px;
+    text-align: center;
+  }
+}
+
+//--------------CONTACT PAGE-----------------
+.contact{
+  width: 100%;
+  height: 100vh;
+
+  .content{
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  p{
+    width: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 37px;
+    text-align: center;
+  }
+}
+//--------------OFFICE LIST PAGE-----------------
+.wrapper-officelist{
+  width: 100%;
+}
+.container-officelist{
+  padding: 10px;
+  max-width: 1600px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.row{
+  display:flex;
+  flex-direction: row;
+  width: auto;
+  margin-top: 50px;
+  justify-content: center;
+}
+.text-title{
+  text-align: center;
+  padding-top: 140px;
+  font-size: 3rem; 
+}
+
+//--------------OFFICE PAGE-----------------
+.office{
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+  column-gap:5px;
+}
+.card{
+  border-color: transparent;
+  transition: all 0.5s linear ;
+  width:350px;
+  height: auto;
+  &:hover{
+    border: 0.04rem solid rgba($color: #5CC2EF, $alpha: 0.2);
+    box-shadow: 2px 2px 5px 0px rgba($color: #5CC2EF, $alpha: 0.5) ;
+  }
+}
+.img-container{
+  overflow: hidden; 
+}
+.office-pic{
+  width:100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 1s linear ;
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: transparent;
+  border-top: transparent;
+  transition: all 1s linear ;
+  
+  &:hover{
+    background: $lgrey;
+  }
+
+  p{
+    font-size: 1.1rem;
+  }
+  h5{
+    font-size: 1.3rem;
+  }
+}
+//--------------DETAILS PAGE-----------------
+.details-container{
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.info-row{
+   width: 80%;
+   max-width: 1600px;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   margin-top: 150px;
+}
+.info-left{
+  width: 50%;
+  margin-right: 20px;
+
+  img{
+    width: 100%;
+  }
+}
+.info-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2{
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  h4{
+    font-weight: 500;
+    font-size: 1.6rem; 
+  }
+  p{
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    font-weight: 200;
+    line-height: 37px;
+    span{
+      font-weight: 500;
+    }
+  }
+  .detail-btns{
+    margin-top: 25px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+  }
+  .btn{
+  background: $blue;
+  border-radius: 2px;
+  border: none;
+  color: $white;
+  width: 230px;
+  height: 54px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem ;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover{
+    background: $grey;
+    color: $white;
+    }
+  }
+  .back{
+    background: transparent;
+    border: $blue 2px solid;
+    color: $blue;
+    margin-right: 15px;
+  }
+}
+//--------------DEFAULT PAGE-----------------
+.wrapper-default{
+  width: 100%;
+  height: 100vh;
+  
+  .container{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  h3{
+    font-weight: 300;
+    font-size: 1.3rem;
+    margin-top: 60px;
+    
+    span{
+      color: $blue;
+      font-weight: 400;
+    }
+  }
+}
+
+/*----------------------------------- Laptop SIZE  ------------------------------------------*/
+@media only screen and (max-width:1458px){
+
+  .navLinks{
+    width: 35%;
+    font-size: 1.1rem;
+    
+    img .logo{
+      width: 55px;
+    }
+  }
+  //--------------Home PAGE-----------------
+  .contentLeft{
+    width: 40%;
+    .title{
+      font-size: 2.5rem;
+      letter-spacing: 8px;
+      line-height: 45px;
+      span{
+        font-size: 1.5rem;
+      }
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+
+  //--------------ABOUT PAGE-----------------
+  .about{
+    .content{
+      width: 100%;
+      position: static;
+      transform: none;
+    }
+
+    h1{
+      margin-top: 90px ;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p{  
+      width: 80%;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+  //--------------CONTACT PAGE-----------------
+  .contact{
+    h1{
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p{
+      width: 90%;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+    //--------------OFFICE LIST PAGE-----------------
+  .container-officelist{
+    width: 100%;
+  }
+  .row{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-column-gap: 15px;
+  }
+  .text-title{
+    padding-top: 90px;
+    font-size: 2.5rem; 
+  }
+    //--------------OFFICE PAGE-----------------
+  .card{
+    width: 100%;
+    max-width:350px;
+  }
+
+      //--------------DETAILS PAGE-----------------
+  .details-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+  }
+
+  .info-row{
+    width: 90%;
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    padding-bottom: 20px;
+  }
+  .info-right{
+  width: 50%;
+  p{
+    font-size: 18px;
+    }
+  }
+
+}
+/*----------------------------------- Tablet SIZE  ------------------------------------------*/
+@media only screen and (max-width:900px){
+  .navLinks{
+    width: 50%;
+    font-size: 1rem;
+    
+    img .logo{
+      width: 50px;
+    }
+  }
+  //--------------Home PAGE-----------------
+  .contentLeft{
+    width: 90%;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about{ 
+    .content{
+      width: 100%;
+      position: static;
+      transform: none;
+    }
+    h1{
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p{
+      width: 80%;
+      font-size: 18px;
+    }
+  }
+   //--------------OFFICE LIST PAGE-----------------
+   .container-officelist{
+    height: auto;
+  }
+  .row{
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 20px;
+  }
+    //--------------DETAILS PAGE-----------------
+  .details-container{
+    height: auto;
+  }
+
+  .info-row{
+    width: 100%;
+    position: static;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-left{
+    width: 80%;
+    margin-right: 0px;
+  }
+  .info-right{
+    width: 80%;
+    h4{
+      font-size: 22px; 
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
+/*----------------------------------- mobile SIZE  ------------------------------------------*/
+@media only screen and (max-width:620px){
+  .navLinks{
+    width: 80%;
+  }
+  //--------------OFFICE LIST PAGE-----------------
+  .container-officelist{
+    height: auto;
+    .text-title{
+      font-size: 2rem;
+    }
+  }
+  .row{
+    grid-template-columns: 1fr;
+  }
+   //--------------DETAILS PAGE-----------------
+   .details-container{
+    height: auto;
+  }
+  .detail-btns{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    .back{
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+  }
+}
